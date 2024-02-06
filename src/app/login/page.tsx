@@ -40,10 +40,9 @@ const ImagesVerifikasi = [
 ];
 
 const Login = () => {
-  const savedInputValue = localStorage.getItem("nomor") || "";
   const [active, setActive] = useState(false);
   const [ModalEnterState, setModalEnterState] = useState(false);
-  const [nomor, setNomor] = useState(savedInputValue);
+  const [nomor, setNomor] = useState("");
   const [isDisabled, setIsDisabled] = useState(true);
   const [error, setError] = useState("");
 
@@ -56,10 +55,6 @@ const Login = () => {
       setError("Format nomor HP anda salah. Coba lagi ya.");
     }
   };
-
-  useEffect(() => {
-    localStorage.setItem("nomor", nomor);
-  }, [nomor]);
 
   const handleClick = () => {
     setModalEnterState(true);
