@@ -17,7 +17,6 @@ import { MdOutlineWatchLater } from "react-icons/md";
 import { FaUnlockAlt } from "react-icons/fa";
 import { SlInfo } from "react-icons/sl";
 import ModalEnter from "@/components/Login/ModalEnter";
-import BankIndonesia from "@/lib/images/BankIndonesia.png";
 
 const ImagesVerifikasi = [
   {

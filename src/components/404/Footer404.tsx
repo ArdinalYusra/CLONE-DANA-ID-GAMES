@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import DownloadLogo from "@/lib/images/DownloadLogo.png";
 import KominfoLogo from "@/lib/images/KominfoLogo.png";
-import BankIndonesia from "@/lib/images/BankIndonesia.png";
 import logoDana from "@/lib/images/logoDana.png";
 import { IoIosArrowRoundUp } from "react-icons/io";
 import {
@@ -109,8 +108,7 @@ const Footer404 = () => {
         </div>
         <div className="md:flex md:items-center md:gap-10">
           <p>DANA Indonesia is registered and monitored by</p>
-          <div className="flex w-full justify-between md:justify-normal lg:gap-10 p-5">
-            <Image src={BankIndonesia} alt="" height={100} width={100} />
+          <div className="flex w-full p-5">
             <Image src={KominfoLogo} alt="" height={100} width={100} />
           </div>
         </div>
